@@ -1,6 +1,16 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var apiService = builder.AddProject<Projects.CreadorContenido_ApiService>("apiservice");
+//Add Azure Storage 
+
+var storage = builder.AddAzureStorage("storage").RunAsEmulator(azurite =>
+                     {
+                         azurite.WithLifetime(ContainerLifetime.Persistent);
+                     }).AddBlobs("images");
+
+
+var apiService = builder.AddProject<Projects.CreadorContenido_ApiService>("apiservice")
+            .WithReference(storage)
+            .WaitFor(storage);
 
 builder.AddProject<Projects.CreadorContenido_Web>("webfrontend")
     .WithExternalHttpEndpoints()

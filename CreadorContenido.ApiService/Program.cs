@@ -9,6 +9,9 @@ builder.Services.AddProblemDetails();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+// Add Azure Blob client
+builder.AddAzureBlobClient("storage", settings => settings.DisableHealthChecks = true);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
