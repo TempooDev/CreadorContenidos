@@ -69,7 +69,6 @@ ScaffoldingReadMe.txt
 
 # StyleCop
 StyleCopReport.xml
-**/obj
 
 # Files built by Visual Studio
 *_i.c
@@ -112,4 +111,5 @@ __pycache__/
 # Python virtual environment files
 **/.venv/*
 
+# Ignore obj folders
 **/obj/
