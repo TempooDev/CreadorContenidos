@@ -112,4 +112,4 @@ __pycache__/
 **/.venv/*
 
 # Ignore obj folders
-**/obj/
+*/obj/
