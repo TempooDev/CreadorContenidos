@@ -26,7 +26,7 @@ To install and set up the project, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/usuario/aspire.git
+    git clone https://github.com/TempooDev/CreadorContenidos.git
     ```
 2. Navigate to the project directory:
     ```bash
@@ -34,14 +34,14 @@ To install and set up the project, follow these steps:
     ```
 3. Install the dependencies:
     ```bash
-    npm install
+   dotnet restore
     ```
 
 ## Usage
 
 To start the project, run:
 ```bash
-npm start
+dotnet run --project CreadorContenido.Apphost.csproj
 ```
 
 ## Contribution
