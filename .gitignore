@@ -111,3 +111,5 @@ __pycache__/
 
 # Python virtual environment files
 **/.venv/*
+
+**/obj/
