@@ -30,7 +30,7 @@ To install and set up the project, follow these steps:
     ```
 2. Navigate to the project directory:
     ```bash
-    cd aspire
+    cd CreadorContenidos
     ```
 3. Install the dependencies:
     ```bash
