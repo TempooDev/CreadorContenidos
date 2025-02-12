@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // Si ha cambiado las plataformas de destino, asegúrese de actualizar la ruta de acceso del programa.
-            "program": "${workspaceFolder}/CreadorContenido.AppHost/bin/Debug/net9.0/CreadorContenido.AppHost.dll",
+            "program": "${workspaceFolder}/src/CreadorContenido.AppHost/bin/Debug/net9.0/CreadorContenido.AppHost.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/CreadorContenido.AppHost",
+            "cwd": "${workspaceFolder}/src/CreadorContenido.AppHost",
             // Para obtener más información sobre el campo \"consola\", consulte https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
