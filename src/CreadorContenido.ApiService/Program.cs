@@ -12,6 +12,10 @@ builder.Services.AddOpenApi();
 // Add Azure Blob client
 builder.AddAzureBlobClient("storage", settings => settings.DisableHealthChecks = true);
 
+
+//add DeepsekR1
+builder.AddOllamaClientApi("deepseek-r1:1.5b");
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -41,6 +45,11 @@ app.MapGet("/weatherforecast", () =>
 app.MapDefaultEndpoints();
 
 app.Run();
+
+class Deepseek(IOllamaClientApi client)
+{
+
+}
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {

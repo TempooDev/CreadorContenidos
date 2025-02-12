@@ -16,6 +16,8 @@
     <ProjectReference Include="..\CreadorContenido.Web\CreadorContenido.Web.csproj" />
     <PackageReference Include="Aspire.Hosting.Azure.Storage"
                   Version="*" />
+    <PackageReference Include="CommunityToolkit.Aspire.Hosting.Ollama"
+                  Version="*" />
   </ItemGroup>
 
   <ItemGroup>

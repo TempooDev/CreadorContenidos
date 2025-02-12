@@ -8,8 +8,12 @@ var storage = builder.AddAzureStorage("storage").RunAsEmulator(azurite =>
                      }).AddBlobs("images");
 
 
+
+var deepseekR1 = builder.AddOllama("ollama").AddModel("deepseek-r1:1.5b");
+
 var apiService = builder.AddProject<Projects.CreadorContenido_ApiService>("apiservice")
             .WithReference(storage)
+            .WithReference(deepseekR1)
             .WaitFor(storage);
 
 builder.AddProject<Projects.CreadorContenido_Web>("webfrontend")

@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CreadorContenido.ServiceDefaults\CreadorContenido.ServiceDefaults.csproj" />
+    <PackageReference Include="CommunityToolkit.Aspire.OllamaSharp"
+                  Version="*" />
     <PackageReference Include="Aspire.Azure.Storage.Blobs"
                   Version="*" />
   </ItemGroup>
